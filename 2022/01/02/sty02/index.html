@@ -4,8 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢迎来到我的博客, Hotpotcloud">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="JS 高阶02面向过程和对象, Hotpotcloud">
+    <meta name="description" content="JS高级-DAY021 今日目标
+面向对象 和 面向过程 [ 了解 ] 
+
+原型和原型链[重点!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! - 理解清晰 能画图]
+
+this的指向[重点!!! - 分析面试题]
+
+
+2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +25,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢迎来到我的博客 | Hotpotcloud</title>
+    <title>JS 高阶02面向过程和对象 | Hotpotcloud</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -314,7 +322,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢迎来到我的博客</h1>
+                    <h1 class="description center-align post-title">JS 高阶02面向过程和对象</h1>
                 </div>
             </div>
         </div>
@@ -468,19 +476,176 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <h1 id="JS高级-DAY02"><a href="#JS高级-DAY02" class="headerlink" title="JS高级-DAY02"></a>JS高级-DAY02</h1><h2 id="1-今日目标"><a href="#1-今日目标" class="headerlink" title="1 今日目标"></a>1 今日目标</h2><ul>
+<li><p>面向对象 和 面向过程 [ 了解 ] </p>
+</li>
+<li><p>原型和原型链[重点!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! - 理解清晰 能画图]</p>
+</li>
+<li><p>this的指向[重点!!! - 分析面试题]</p>
+</li>
+</ul>
+<h2 id="2-面向对象和面向过程-了解"><a href="#2-面向对象和面向过程-了解" class="headerlink" title="2 面向对象和面向过程[了解]"></a>2 面向对象和面向过程[了解]</h2><h3 id="2-1-面向对象和面向过程-了解"><a href="#2-1-面向对象和面向过程-了解" class="headerlink" title="2.1 面向对象和面向过程[了解]"></a>2.1 面向对象和面向过程[了解]</h3><ul>
+<li>面向过程(POP):  按照流程, 一步一步的做, 所有步骤亲力亲为, 小兵思维.</li>
+<li>面向对象(OOP):  把功能封装成对象, 要做什么找对象,调用对象的方法, 指挥者的思维, 将军思维</li>
+</ul>
+<h3 id="2-2-类和实例对象"><a href="#2-2-类和实例对象" class="headerlink" title="2.2 类和实例对象"></a>2.2 类和实例对象</h3><ul>
+<li>类(构造函数):  一个大的分类:  人/动物/车/程序员/格子衫      数组  对象  字符串  数字  日期</li>
+<li>实例对象: 一个非常具体的对象:  小貂蝉 18 5224577   川A666 丰田 AE86        [1,2,3] { name: ‘小貂蝉’ }</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> 实例对象 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">类</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// const arr = new Array([1,2,3])  const o = new Object()</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+<h2 id="3-构造函数-掌握"><a href="#3-构造函数-掌握" class="headerlink" title="3 构造函数[掌握]"></a>3 构造函数[掌握]</h2><ul>
+<li><p>在es5中, js没有类, 所以使用 <code>构造函数代表类</code> </p>
+</li>
+<li><p>JS有内置的构造函数(类)</p>
+<ul>
+<li><p>Object</p>
+</li>
+<li><p>Array</p>
+</li>
+<li><p>Number</p>
+</li>
+<li><p>String</p>
+</li>
+<li><p>Date</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 实例化对象( 使用new 调用构造函数 创建出实例对象 )</span>
+<span class="token keyword">const</span> o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> num <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</li>
+</ul>
+</li>
+<li><p>我们可以自己写构造函数( 自己写类 )</p>
+<ul>
+<li>构造函数的特点<ul>
+<li>函数名大写字母开头</li>
+<li>属性和方法都挂在this上</li>
+<li>没有返回值</li>
+<li>使用new调用</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-js"><code class="language-js"># 自己写一个构造函数 <span class="token punctuation">(</span> 除了内置的构造函数之外 我们可以自己写 然后使用 <span class="token keyword">new</span> 来调用 <span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 人类 ( 人的构造函数 )</span>
+<span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sex<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 给this添加属性 </span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span class="token operator">=</span> sex<span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">// 给this添加方法</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eat <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">'干饭'</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">// 车类 ( 车的构造函数 )</span>
+<span class="token keyword">function</span> <span class="token function">Car</span><span class="token punctuation">(</span>brand<span class="token punctuation">,</span> color<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 给this添加属性</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>brand <span class="token operator">=</span> brand<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> color<span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">// 给this添加方法</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>startup <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">'启动'</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</li>
+<li><p><code>new的过程</code></p>
+<ul>
+<li>创建一个空对象</li>
+<li>让this指向空对象</li>
+<li>执行构造函数代码</li>
+<li>自动返回this</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 人类 ( 人的构造函数 )</span>
+<span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sex<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 给this添加属性 </span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span class="token operator">=</span> sex<span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">// 给this添加方法</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eat <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">'干饭'</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 创建实例对象</span>
+<span class="token keyword">const</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">'小貂蝉'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">)</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+</li>
+</ul>
+<h2 id="4-原型Prototype和原型链-重点"><a href="#4-原型Prototype和原型链-重点" class="headerlink" title="4 原型Prototype和原型链[重点]"></a>4 原型Prototype和原型链[重点]</h2><h3 id="4-1-方法过载-了解"><a href="#4-1-方法过载-了解" class="headerlink" title="4.1 方法过载[了解]"></a>4.1 方法过载[了解]</h3><ul>
+<li>new出来的实例对象, 每个实例对象,都有一份自己的方法,称为 <code>方法过载</code>,内存开销过大.</li>
+</ul>
+<h3 id="4-2-原型prototype-重点"><a href="#4-2-原型prototype-重点" class="headerlink" title="4.2 原型prototype[重点]"></a>4.2 原型prototype[重点]</h3><ul>
+<li>[1] 每个函数,特指构造函数,都有一个属性prototype,就是原型( 显式原型 )</li>
+<li>[2] 原型prototype是一个对象, 添加在里面的方法,被所有new出来的实例对象共享.</li>
+<li>[3] 实例对象,都有一个属性<code>__proto__(隐式原型)</code>, 等于自己构造函数的<code>prototype(显式原型)</code> </li>
+<li>[4] 原型prototype里面有一个属性<code>constructor</code>, 指向构造函数本身.</li>
+</ul>
+<h3 id="4-3-原型的作用-重点"><a href="#4-3-原型的作用-重点" class="headerlink" title="4.3 原型的作用[重点]"></a>4.3 原型的作用[重点]</h3><ul>
+<li>添加共享方法.</li>
+</ul>
+<h3 id="4-4-原型链-重点"><a href="#4-4-原型链-重点" class="headerlink" title="4.4 原型链[重点]"></a>4.4 原型链[重点]</h3><ul>
+<li>[5] 原型prototype本身也是一个实例对象, 也有<code>__proto__</code>, 指向自己构造函数Object的<code>prototype</code></li>
+<li>[6] Object的prototype也是实例对象, 也有<code>__proto__</code>, 指向null</li>
+<li>[7] Object的prototype也有属性<code>constructor</code>, 指向构造函数<code>Object</code>本身.</li>
+</ul>
+<h3 id="4-5-原型链的作用"><a href="#4-5-原型链的作用" class="headerlink" title="4.5 原型链的作用"></a>4.5 原型链的作用</h3><ul>
+<li>添加共享方法</li>
+<li>实例对象查找方法,先找自己,自己没有,就沿着原型链往上找,找到就可以调用,直到<code>Object.prototype</code>找不到就报错.</li>
+</ul>
+<h2 id="5-this-重点-分析面试题"><a href="#5-this-重点-分析面试题" class="headerlink" title="5 this[重点 - 分析面试题]"></a>5 this[重点 - 分析面试题]</h2><h3 id="5-1-this的指向"><a href="#5-1-this的指向" class="headerlink" title="5.1 this的指向"></a>5.1 this的指向</h3><ul>
+<li>全局this:     <code>window</code></li>
+<li>函数中的this:  <code>谁调用,指向谁</code></li>
+<li>对象方法中的this:  <code>谁调用,指向谁</code></li>
+<li>构造函数中的this:   <code>实例对象</code></li>
+<li>事件处理函数中的this:  <code>事件源</code></li>
+<li>定时器中的this:  <code>window</code></li>
+<li>箭头函数中的this:  <code>上一级</code> ( 箭头函数没有this, 它的this绑定定义函数时所处的作用域 )</li>
+</ul>
+<h3 id="5-2-3个改变this指向的方法"><a href="#5-2-3个改变this指向的方法" class="headerlink" title="5.2 3个改变this指向的方法"></a>5.2 3个改变this指向的方法</h3><ol>
+<li>伪数组转变成真数组的方法</li>
+</ol>
+<ul>
+<li><p>call() 和 apply()</p>
+<ul>
+<li>区别:  功能一模一样, 唯一的区别是传递参数方式不同.</li>
+</ul>
+<pre class=" language-js"><code class="language-js"># 语法
+函数<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span>指向<span class="token punctuation">,</span> 实参<span class="token number">1</span><span class="token punctuation">,</span> 实参<span class="token number">2</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// 调用函数 且 指定this  第一个参数用来改变this指向，不需要形参来接收</span>
+
+函数<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span>指向<span class="token punctuation">,</span> <span class="token punctuation">[</span>实参<span class="token number">1</span><span class="token punctuation">,</span> 实参<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 调用函数 且 指定this</span>
+
+传实际参数的格式不一样哦！
+</code></pre>
+</li>
+<li><p>bind()</p>
+<ul>
+<li>把函数的this绑定到一个目标对象,然后返回一个新函数, 此后,只要调用新函数, this就固定了,指向之前绑定的目标对象.</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> 新函数 <span class="token operator">=</span> 函数<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span>指向<span class="token punctuation">)</span>
+
+<span class="token function">新函数</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="6-今日作业"><a href="#6-今日作业" class="headerlink" title="6 今日作业"></a>6 今日作业</h2><ul>
+<li>课堂代码1遍</li>
+<li>手绘原型图5遍 ( 理解清楚关系 )</li>
+<li>手绘原型链图5遍 ( 理解清楚关系 )</li>
+<li>课后作业第3题. [ 画图  - 理解…. ]</li>
+<li>上次作业滴滴扩展题( 画图…..  理解)</li>
+<li>闭包概念4条规则 (1遍)</li>
+</ul>
 
                 
             </div>
@@ -507,7 +672,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hotpotcloud.com/2022/01/02/hello-world/">https://hotpotcloud.com/2022/01/02/hello-world/</a>
+                    <a href="https://hotpotcloud.com/2022/01/02/sty02/">https://hotpotcloud.com/2022/01/02/sty02/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -720,13 +885,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/02/sty03/">
+                <a href="/2022/01/02/sty01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="JS 高阶03 深浅拷贝">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JS 高阶01 闭包">
                         
-                        <span class="card-title">JS 高阶03 深浅拷贝</span>
+                        <span class="card-title">JS 高阶01 闭包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -754,16 +919,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/02/hello-world/">
+                <a href="/2022/01/02/sty03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="欢迎来到我的博客">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="JS 高阶03 深浅拷贝">
                         
-                        <span class="card-title">欢迎来到我的博客</span>
+                        <span class="card-title">JS 高阶03 深浅拷贝</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -784,7 +949,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

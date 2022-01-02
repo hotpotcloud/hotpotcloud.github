@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>JS高阶04 智库</title>
+      <link href="/2022/01/02/sty04/"/>
+      <url>/2022/01/02/sty04/</url>
+      
+        <content type="html"><![CDATA[<h1 id="课堂知识点智库"><a href="#课堂知识点智库" class="headerlink" title="课堂知识点智库"></a>课堂知识点智库</h1><h2 id="一、高阶"><a href="#一、高阶" class="headerlink" title="一、高阶"></a>一、高阶</h2><h3 id="01-Function-prototype-toString的作用"><a href="#01-Function-prototype-toString的作用" class="headerlink" title="01.Function.prototype.toString的作用"></a>01.Function.prototype.toString的作用</h3><p>返回当前函数代码体的字符串</p><h3 id="02-Function基类的作用"><a href="#02-Function基类的作用" class="headerlink" title="02. Function基类的作用"></a>02. Function基类的作用</h3><p>new Function([arg1,arg2…],functionBody)可以创建一个function函数，且设置参数</p><h3 id="03-JavaScript和ECMAscript的关系？"><a href="#03-JavaScript和ECMAscript的关系？" class="headerlink" title="03. JavaScript和ECMAscript的关系？"></a>03. JavaScript和ECMAscript的关系？</h3><p>JavaScript是语言<br>ECMAscript是规范</p><h3 id="04-javascript中对象被销毁的标致是什么？"><a href="#04-javascript中对象被销毁的标致是什么？" class="headerlink" title="04.javascript中对象被销毁的标致是什么？"></a>04.javascript中对象被销毁的标致是什么？</h3><p>当对象不再引用的时候，就被销毁了，比如a={name:‘张三’},如果为a赋值为null，则{name：‘张三’}就被销毁了</p><h3 id="05-ES6解构赋值的核心是什么？"><a href="#05-ES6解构赋值的核心是什么？" class="headerlink" title="05.ES6解构赋值的核心是什么？"></a>05.ES6解构赋值的核心是什么？</h3><p>变量所处结构目标数据结构一模一样<br>数组解构小细节：<br>跳过成员解构，使用空白加逗号</p><h3 id="06-扩展运算符特性"><a href="#06-扩展运算符特性" class="headerlink" title="06.扩展运算符特性"></a>06.扩展运算符特性</h3><p>1.可以展开字符串<br>2.可以展开数组<br>3.可以展开对象<br>(1)必须在一个对象内展开另一个对象</p><h3 id="07-Object-assign的作用"><a href="#07-Object-assign的作用" class="headerlink" title="07.Object.assign的作用"></a>07.Object.assign的作用</h3><p>1.语法：Object.assign(target,source1,source2…)<br>2.定义：将所有可枚举属性从一个或多个源对象身上分配给目标对象，且返回目标对象本身！</p><h3 id="08-class类中原型方法的内部this有什么特点？"><a href="#08-class类中原型方法的内部this有什么特点？" class="headerlink" title="08. class类中原型方法的内部this有什么特点？"></a>08. class类中原型方法的内部this有什么特点？</h3><p>3.Class类原型方法在调用的时候必须显式指明this指向，否则内部this为undefined</p><h3 id="09-Object-create的作用是什么？"><a href="#09-Object-create的作用是什么？" class="headerlink" title="09. Object.create的作用是什么？"></a>09. Object.create的作用是什么？</h3><p>1.语法：Object.create(protoObj)<br>2.概念：<br>(1)创建一个对象<br>(2)将参数中的对象设置为创建出来的对象的原型</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JS 高阶01 闭包</title>
       <link href="/2022/01/02/sty01/"/>
       <url>/2022/01/02/sty01/</url>

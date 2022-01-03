@@ -383,10 +383,52 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/JavaScript/" title="JavaScript: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="JavaScript" style="background-color: #F9EBEA;">JavaScript
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%AB%98%E9%98%B6/" title="高阶: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="高阶" style="background-color: #F5EEF8;">高阶
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"JavaScript","weight":5,"link":"/tags/JavaScript/"},{"text":"高阶","weight":5,"link":"/tags/高阶/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
@@ -409,7 +451,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.2k</span>
+                        class="white-color">9.3k</span>
             
             
             

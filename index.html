@@ -525,22 +525,6 @@
 
 
 
-
-<style>
-    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 100vh; width: 100%; object-fit: cover;}
-    @media only screen and (max-width: 760px) { #index-video { display: none;}}
-    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
-</style>
-<video id="index-video" autoplay loop muted>
-
-    <source src="https://txmov2.a.yximgs.com/upic/2021/04/09/22/BMjAyMTA0MDkyMjMwMDhfMTg1ODk2MDg4N180NzUyOTMyMjA4Nl8xXzM=_b_B8e080d7ede19e6674d48a9f12545007b.mp4?pkey=AAVAfNhi5_f-HGkIPXrY5w6nyf4JibwOY-WwdHgSJ2aSoi-2WQLpiYDunLbRZQuESz875eMdsepRlVFtXg9nuQY58uRc-7AsF0kEMNR6QYBj56g9JFFMSGdsoKK2-SV27u8&amp;tag=1-1617978682-xpcwebprofile-0-lcvipceuti-9e40072f87531f1a&amp;clientCacheKey=3xbbtbrfxqpccp4_b.mp4">
-
-    <source src="https://txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTQyNDRfMTg1ODk2MDg4N180NzUyNjAyMzA0N18xXzM=_b_B83b004b85aba8eca3ded270637616575.mp4">
-
-    <source src="https://txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTU4MDNfMTg1ODk2MDg4N180NzUyNzE0MzkyNV8xXzM=_b_Bf94cee6bd181efeaca64049bd2e4e276.mp4">
-
-</video>
-
 <main class="content">
 
     
@@ -591,34 +575,37 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/03/sty05/">
+                    <a href="/2022/01/16/04.%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97%E2%80%94%E2%80%94day04/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="异步同步及框架">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="vue 项目日志04">
                             
-                            <span class="card-title">异步同步及框架</span>
+                            <span class="card-title">vue 项目日志04</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                异步同步及框架同步和异步（理解）
-同步
-代码顺序执行，后面的代码等前面的代码执行完再执行
-
-异步
-异步代码要等到当前文件中所有同步代码执行完成以后再单独依次执行异步代码
+                                项目日志——day04element-ui图片墙
+首先将element-ui的示例代码拷贝过来
 
 
-// 同步代码  
-//console.log(3)要等到循环结束
+  
+
+
+  
+
+
+  export default &#123;
+    data() &#123;
+      return &#123
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -632,12 +619,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/JavaScript/">
-                            <span class="chip bg-color">JavaScript</span>
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
                         </a>
                         
-                        <a href="/tags/%E9%AB%98%E9%98%B6/">
-                            <span class="chip bg-color">高阶</span>
+                        <a href="/tags/VUE-%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97/">
+                            <span class="chip bg-color">VUE 项目日志</span>
                         </a>
                         
                     </div>
@@ -649,26 +636,30 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/02/sty04/">
+                    <a href="/2022/01/16/03.%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97%E2%80%94%E2%80%94day03/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="JS高阶04 智库">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="vue 项目日志03">
                             
-                            <span class="card-title">JS高阶04 智库</span>
+                            <span class="card-title">vue 项目日志03</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                课堂知识点智库一、高阶01.Function.prototype.toString的作用返回当前函数代码体的字符串
-02. Function基类的作用new Function([arg1,arg2…],functionBody)可以创建一个
+                                项目日志day-03表格自定义内容表格的el-table-column列为用户提供了默认的匿名作用域插槽功能，所以我们可以再el-table-column中自定义需要的内容
+默认匿名插槽使用语法：
+
+    
+        编辑
+    
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -682,12 +673,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/JavaScript/">
-                            <span class="chip bg-color">JavaScript</span>
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
                         </a>
                         
-                        <a href="/tags/%E9%AB%98%E9%98%B6/">
-                            <span class="chip bg-color">高阶</span>
+                        <a href="/tags/VUE-%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97/">
+                            <span class="chip bg-color">VUE 项目日志</span>
                         </a>
                         
                     </div>
@@ -699,31 +690,32 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/02/sty01/">
+                    <a href="/2022/01/16/02.%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97%E2%80%94%E2%80%94day02/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JS 高阶01 闭包">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="vue 项目日志02">
                             
-                            <span class="card-title">JS 高阶01 闭包</span>
+                            <span class="card-title">vue 项目日志02</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                JS高级-DAY011 今日目标
-执行环境和作用域 [ 理解  - 5%]
-函数进阶 [重点 - 使用熟练 - 45%]
-闭包[重点 - 理解清晰 - 50%]
+                                项目日志—day02表单校验element-ui的表单校验有两个体系：
 
-2 执行环境和变量对象和作用域 [ 理解 ]2.1 执行环境 [ 了解 ]
+element-ui默认表单校验机制
+自定义表单校验入口
 
+element-ui默认校验要实现el-form表单的默认校验，我们必须具备以下条件：
+
+el-form必
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -737,12 +729,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/JavaScript/">
-                            <span class="chip bg-color">JavaScript</span>
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
                         </a>
                         
-                        <a href="/tags/%E9%AB%98%E9%98%B6/">
-                            <span class="chip bg-color">高阶</span>
+                        <a href="/tags/VUE-%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97/">
+                            <span class="chip bg-color">VUE 项目日志</span>
                         </a>
                         
                     </div>
@@ -754,33 +746,37 @@
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/02/sty02/">
+                    <a href="/2022/01/16/01.%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97%E2%80%94day01/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="JS 高阶02面向过程和对象">
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="vue 项目日志01">
                             
-                            <span class="card-title">JS 高阶02面向过程和对象</span>
+                            <span class="card-title">vue 项目日志01</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                JS高级-DAY021 今日目标
-面向对象 和 面向过程 [ 了解 ] 
+                                项目日志​    错误记录：
 
-原型和原型链[重点!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! - 理解清晰 能画图]
+单词拼写错误，注意大小写
 
-this的指向[重点!!! - 分析面试题]
+记得给二级路由出口
 
+注意重定向二级路由
 
-2
+配置axios   
+
+引入axios 
+创建axios实例（项目伸缩性更好）
+const instance=axios.create(
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -794,12 +790,12 @@ this的指向[重点!!! - 分析面试题]
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/JavaScript/">
-                            <span class="chip bg-color">JavaScript</span>
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
                         </a>
                         
-                        <a href="/tags/%E9%AB%98%E9%98%B6/">
-                            <span class="chip bg-color">高阶</span>
+                        <a href="/tags/VUE-%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97/">
+                            <span class="chip bg-color">VUE 项目日志</span>
                         </a>
                         
                     </div>
@@ -811,27 +807,34 @@ this的指向[重点!!! - 分析面试题]
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/02/sty03/">
+                    <a href="/2022/01/16/vue-day03/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="JS 高阶03 深浅拷贝">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="vue 深入探究03">
                             
-                            <span class="card-title">JS 高阶03 深浅拷贝</span>
+                            <span class="card-title">vue 深入探究03</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                JS 高阶 Day03复习闭包是什么：函数 + 函数内部跨坐用域访问的变量
-（一）基本类型 &amp; 引用类型在内存中存储
-基本类型（7）：number、string、boolean、undefined、null、Symbol（唯一的值）
+                                day03组件详解vue组件的一些基本特性：
+
+视图模板——template
+自身逻辑——script
+接受属性——props
+通信特征
+自定义事件
+v-model语法糖应用
+
+组件视图模板视图模板主要指的是&lt;template&gt;
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -845,12 +848,12 @@ this的指向[重点!!! - 分析面试题]
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/JavaScript/">
-                            <span class="chip bg-color">JavaScript</span>
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
                         </a>
                         
-                        <a href="/tags/%E9%AB%98%E9%98%B6/">
-                            <span class="chip bg-color">高阶</span>
+                        <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                            <span class="chip bg-color">VUE 常用语法总结</span>
                         </a>
                         
                     </div>
@@ -862,25 +865,28 @@ this的指向[重点!!! - 分析面试题]
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/01/02/hello-world/">
+                    <a href="/2022/01/16/vue-day02/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="欢迎来到我的博客">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="vue 深入探究">
                             
-                            <span class="card-title">欢迎来到我的博客</span>
+                            <span class="card-title">vue 深入探究</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                                Vue-day02v-bindv-bind主要作用是：绑定属性
+在vue中，自定义的组件可以通过属性与外界进行通信，那么我们如何为一个组件（或者原生html节点）添加属性呢？
+一句比较绝对又冒失的话：
+template里面的东西，基本都可以
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                             <span class="publish-author">
                                 
@@ -891,6 +897,18 @@ this的指向[重点!!! - 分析面试题]
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/VUE/">
+                            <span class="chip bg-color">VUE</span>
+                        </a>
+                        
+                        <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                            <span class="chip bg-color">VUE 常用语法总结</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -900,6 +918,30 @@ this的指向[重点!!! - 分析面试题]
     </article>
 
 </main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 3</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/2/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
 
 
 
@@ -920,7 +962,7 @@ this的指向[重点!!! - 分析面试题]
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9.3k</span>
+                        class="white-color">18.6k</span>
             
             
             

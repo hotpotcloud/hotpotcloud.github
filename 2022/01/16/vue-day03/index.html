@@ -4,9 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS高阶04 智库, Hotpotcloud">
-    <meta name="description" content="课堂知识点智库一、高阶01.Function.prototype.toString的作用返回当前函数代码体的字符串
-02. Function基类的作用new Function([arg1,arg2…],functionBody)可以创建一个">
+    <meta name="keywords" content="vue 深入探究03, Hotpotcloud">
+    <meta name="description" content="day03组件详解vue组件的一些基本特性：
+
+视图模板——template
+自身逻辑——script
+接受属性——props
+通信特征
+自定义事件
+v-model语法糖应用
+
+组件视图模板视图模板主要指的是&amp;lt;template&amp;gt;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +26,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JS高阶04 智库 | Hotpotcloud</title>
+    <title>vue 深入探究03 | Hotpotcloud</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -320,12 +328,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JS高阶04 智库</h1>
+                    <h1 class="description center-align post-title">vue 深入探究03</h1>
                 </div>
             </div>
         </div>
@@ -441,12 +449,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/VUE/">
+                                <span class="chip bg-color">VUE</span>
                             </a>
                         
-                            <a href="/tags/%E9%AB%98%E9%98%B6/">
-                                <span class="chip bg-color">高阶</span>
+                            <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                                <span class="chip bg-color">VUE 常用语法总结</span>
                             </a>
                         
                     </div>
@@ -461,28 +469,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-03
+                    2022-01-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    353
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -497,15 +505,234 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="课堂知识点智库"><a href="#课堂知识点智库" class="headerlink" title="课堂知识点智库"></a>课堂知识点智库</h1><h2 id="一、高阶"><a href="#一、高阶" class="headerlink" title="一、高阶"></a>一、高阶</h2><h3 id="01-Function-prototype-toString的作用"><a href="#01-Function-prototype-toString的作用" class="headerlink" title="01.Function.prototype.toString的作用"></a>01.Function.prototype.toString的作用</h3><p>返回当前函数代码体的字符串</p>
-<h3 id="02-Function基类的作用"><a href="#02-Function基类的作用" class="headerlink" title="02. Function基类的作用"></a>02. Function基类的作用</h3><p>new Function([arg1,arg2…],functionBody)可以创建一个function函数，且设置参数</p>
-<h3 id="03-JavaScript和ECMAscript的关系？"><a href="#03-JavaScript和ECMAscript的关系？" class="headerlink" title="03. JavaScript和ECMAscript的关系？"></a>03. JavaScript和ECMAscript的关系？</h3><p>JavaScript是语言<br>ECMAscript是规范</p>
-<h3 id="04-javascript中对象被销毁的标致是什么？"><a href="#04-javascript中对象被销毁的标致是什么？" class="headerlink" title="04.javascript中对象被销毁的标致是什么？"></a>04.javascript中对象被销毁的标致是什么？</h3><p>当对象不再引用的时候，就被销毁了，比如a={name:‘张三’},如果为a赋值为null，则{name：‘张三’}就被销毁了</p>
-<h3 id="05-ES6解构赋值的核心是什么？"><a href="#05-ES6解构赋值的核心是什么？" class="headerlink" title="05.ES6解构赋值的核心是什么？"></a>05.ES6解构赋值的核心是什么？</h3><p>变量所处结构目标数据结构一模一样<br>数组解构小细节：<br>跳过成员解构，使用空白加逗号</p>
-<h3 id="06-扩展运算符特性"><a href="#06-扩展运算符特性" class="headerlink" title="06.扩展运算符特性"></a>06.扩展运算符特性</h3><p>1.可以展开字符串<br>2.可以展开数组<br>3.可以展开对象<br>(1)必须在一个对象内展开另一个对象</p>
-<h3 id="07-Object-assign的作用"><a href="#07-Object-assign的作用" class="headerlink" title="07.Object.assign的作用"></a>07.Object.assign的作用</h3><p>1.语法：Object.assign(target,source1,source2…)<br>2.定义：将所有可枚举属性从一个或多个源对象身上分配给目标对象，且返回目标对象本身！</p>
-<h3 id="08-class类中原型方法的内部this有什么特点？"><a href="#08-class类中原型方法的内部this有什么特点？" class="headerlink" title="08. class类中原型方法的内部this有什么特点？"></a>08. class类中原型方法的内部this有什么特点？</h3><p>3.Class类原型方法在调用的时候必须显式指明this指向，否则内部this为undefined</p>
-<h3 id="09-Object-create的作用是什么？"><a href="#09-Object-create的作用是什么？" class="headerlink" title="09. Object.create的作用是什么？"></a>09. Object.create的作用是什么？</h3><p>1.语法：Object.create(protoObj)<br>2.概念：<br>(1)创建一个对象<br>(2)将参数中的对象设置为创建出来的对象的原型</p>
+                <h2 id="day03"><a href="#day03" class="headerlink" title="day03"></a>day03</h2><h3 id="组件详解"><a href="#组件详解" class="headerlink" title="组件详解"></a>组件详解</h3><p>vue组件的一些基本特性：</p>
+<ul>
+<li>视图模板——template</li>
+<li>自身逻辑——script</li>
+<li>接受属性——props</li>
+<li>通信特征</li>
+<li>自定义事件</li>
+<li>v-model语法糖应用</li>
+</ul>
+<h4 id="组件视图模板"><a href="#组件视图模板" class="headerlink" title="组件视图模板"></a>组件视图模板</h4><p>视图模板主要指的是<code>&lt;template&gt;&lt;/template&gt;</code></p>
+<h4 id="组件自身逻辑"><a href="#组件自身逻辑" class="headerlink" title="组件自身逻辑"></a>组件自身逻辑</h4><p>组件自身逻辑主要指的是<code>&lt;script&gt;&lt;/script&gt;</code>,而一个组件逻辑内部常用的一些设定都有：</p>
+<ul>
+<li><p>data——定义组件自身内部数据</p>
+<ul>
+<li>必须，data必须是函数</li>
+<li>必须，data必须返回一个对象，对象内就是定义的组件自身的数据</li>
+</ul>
+</li>
+<li><p>props——定义组件的属性</p>
+<ul>
+<li><p>对象形式，数组形式</p>
+</li>
+<li><p>对象形式的常用书写语法：</p>
+</li>
+<li><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 属性名：属性类型</span>
+props<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    num<span class="token punctuation">:</span>Number<span class="token punctuation">,</span>
+    words<span class="token punctuation">:</span>String
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 完整声明+自定义规则</span>
+props<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    num<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        type<span class="token punctuation">:</span>Number<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 类型</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">10</span>  <span class="token comment" spellcheck="true">//默认值</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 引用类型声明和基本类型有区别</span>
+props<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    obj<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        type<span class="token punctuation">:</span>Object<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>name<span class="token punctuation">:</span><span class="token string">'张三'</span><span class="token punctuation">,</span>age<span class="token punctuation">:</span><span class="token number">30</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+    arr<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        type<span class="token punctuation">:</span>Array<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>数组形式的常用书写方法</p>
+<ul>
+<li><pre class=" language-js"><code class="language-js">props<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">,</span><span class="token string">'arr'</span><span class="token punctuation">,</span><span class="token string">'obj'</span><span class="token punctuation">]</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>methods——定义组件自身的方法</p>
+</li>
+<li><p>watch——监听组件内部数据的变化</p>
+</li>
+<li><p>computed——计算属性，根据当前数据衍生出新的数据</p>
+</li>
+<li><p>生命周期钩子——在每一个生命周期阶段，自动执行</p>
+</li>
+<li><p>filter——过滤器（新版本已经废除）</p>
+</li>
+<li><p>components——注册子组件</p>
+</li>
+</ul>
+<h4 id="组件通信特征"><a href="#组件通信特征" class="headerlink" title="组件通信特征"></a>组件通信特征</h4><p>所有UI框架的组件都具备通信特征，具体通信类型有三种：</p>
+<ul>
+<li>父传子<ul>
+<li>属性通信</li>
+</ul>
+</li>
+<li>子传父<ul>
+<li>vue提供的自定义事件机制</li>
+</ul>
+</li>
+<li>兄弟传兄弟（无视层级通信）<ul>
+<li>第三方BUS集成$emit,$on</li>
+</ul>
+</li>
+</ul>
+<p><strong>父传子</strong></p>
+<p>父传子直接基于属性通信即可，很基础</p>
+<p><strong>子传父</strong></p>
+<p>子传父是基于Vue自定义事件系统实现的，我们需要先认识vue的自定义事件系统</p>
+<p>Vue构造函数原型方法中有一个<code>$on</code>和<code>$emit</code>，它俩的作用：</p>
+<ul>
+<li><p>$on</p>
+<ol>
+<li><p>监听事件</p>
+</li>
+<li><p>接受数据</p>
+</li>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'事件名'</span><span class="token punctuation">,</span>data<span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token operator">...</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>$emit</p>
+<ul>
+<li><p>触发事件</p>
+</li>
+<li><p>传递数据</p>
+</li>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'事件名'</span><span class="token punctuation">,</span><span class="token string">'要传递的数据'</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>关于$on和$emit的配合，我们需要知道的是：</p>
+<ul>
+<li>Vue是整个应用最大的上下文</li>
+<li>$on监听的事件和执行函数，都挂载到了Vue身上</li>
+<li>$emit触发事件，就是去Vue身上找到对应事件，从而调用事件方法</li>
+<li><strong>而每一个组件其实都继承自Vue，所以，基于$on和$emit我们可以随意进行数据传递（最好使用BUS，详见后文）</strong></li>
+</ul>
+<p>回到子传父，其基本思路就是：</p>
+<ul>
+<li>子组件内部通过<code>this.$emit</code>触发事件</li>
+<li>父组件通过@或者v-on在子组件标签身上监听事件</li>
+</ul>
+<p><strong>兄弟传兄弟（无视层级通信）</strong></p>
+<p>其实本质上就是上面$on和$emit的一个函数式写法。</p>
+<p>在无视层级的书写过程中，我们往往需要一个第三方独立空间来管理监听的事件，此时非常推荐使用一个全新独立的Vue实例。</p>
+<p>实现思路：</p>
+<ol>
+<li>创建一个BUS文件<ol>
+<li>内部暴露一个Vue的实例</li>
+</ol>
+</li>
+<li>在需要发送数据的组件内，合适的位置，使用BUS.$emit来触发自定义事件</li>
+<li>在需要接受数据的组件内，mounted生命周期，使用BUS.$on来监听事件</li>
+</ol>
+<h5 id="组件实例通信"><a href="#组件实例通信" class="headerlink" title="组件实例通信"></a>组件实例通信</h5><p>在vue中有一个叫ref的api，他让我可以获取一个组件的实例，一旦获取到组件实例后，当前组件相关数据和方法我们都可以无障碍使用了</p>
+<p>首先，ref的使用方式：</p>
+<pre class=" language-vue"><code class="language-vue"><组件 ref="标记名"></组件>
+</code></pre>
+<p>获取标记的ref：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>标记名<span class="token punctuation">]</span>
+</code></pre>
+<p>注意：通过ref，可以获取子组件身上大部分信息，是通信环节中比较重要的一环。但是，仅限于父组件获取子组件信息的场景</p>
+<h3 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h3><p>插槽，能帮助我们让组件具有容器特性。一个设置了插槽的组件就可以包含别的内容（组件）了</p>
+<p>插槽分为三种：</p>
+<ul>
+<li>匿名插槽</li>
+<li>具名插槽</li>
+<li>作用域插槽（重难点）</li>
+</ul>
+<h4 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h4><p>在组件内直接定义<code>&lt;slot&gt;&lt;/slot&gt;</code>，就可以接受外界被包含的内容了</p>
+<p>组件：SlotCmpt</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div class="wrap">
+    <p>这是一个带有插槽的组件</p>
+    <slot></slot>
+  </div>
+</template>
+</code></pre>
+<p>使用方式：</p>
+<pre class=" language-vue"><code class="language-vue"><SlotCmpt>
+    <h1>这是包含的内容</h1>
+</SlotCmpt>
+</code></pre>
+<h4 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h4><p>顾名思义，就是为每一个插槽取一个名字，然后放置内容的时候都需要声明是那个插槽的内容</p>
+<p>组件：NamedSlot</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div class="wrap">
+    <p>这是一个具名插槽</p>
+    <slot name="header"></slot>
+    <slot name="footer"></slot>
+  </div>
+</template>
+</code></pre>
+<p>使用方式：</p>
+<pre class=" language-vue"><code class="language-vue"><NamedSlot>
+    <template v-slot:header>
+        <h1>这是头部</h1>        
+    </template>
+    
+    <template v-slot:footer>
+        <h1>这是底部</h1>
+    </template>
+</NamedSlot>
+</code></pre>
+<h4 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h4><p>作用域插槽是插槽中和具名插槽使用频率不相上下的一个板块</p>
+<p>作用域插槽在组件通信中使用频率非常高！如果你希望做一个非常智能的组件，作用域插槽一定可以帮到你！</p>
+<p>组件：ScopeSlot</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div>
+    <p>这是一个作用域插槽</p>
+    <!-- 
+        外界接收到的作用域对象长这样：
+            &#123;name1,name2,name3&#125;
+     -->
+    <slot :person1="name1" :person2="name2" :person3="name3"></slot>
+  </div>
+</template>
+</code></pre>
+<p>使用方式：</p>
+<pre class=" language-vue"><code class="language-vue"><div>
+    <p>下面颁发今年源码时代，最受欢迎原创代码奖：</p>
+    <ScopeSlot>
+        <!-- 
+        1.此处的persons是自己定义的名字
+        2.persons代表了子组件内整个作用域插槽
+        -->
+        <template v-slot="persons">
+            &#123;&#123; persons &#125;&#125;
+        </template>
+    </ScopeSlot>
+    <!-- 还可以通过解构的方式来获取子组件的数据 -->
+    <ScopeSlot>
+        <template v-slot="&#123; person1 &#125;">
+            &#123;&#123; person1 &#125;&#125;
+        </template>
+    </ScopeSlot>
+</div>
+</code></pre>
 
                 
             </div>
@@ -532,7 +759,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hotpotcloud.com/2022/01/02/sty04/">https://hotpotcloud.com/2022/01/02/sty04/</a>
+                    <a href="https://hotpotcloud.com/2022/01/16/vue-day03/">https://hotpotcloud.com/2022/01/16/vue-day03/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -570,12 +797,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/VUE/">
+                                    <span class="chip bg-color">VUE</span>
                                 </a>
                             
-                                <a href="/tags/%E9%AB%98%E9%98%B6/">
-                                    <span class="chip bg-color">高阶</span>
+                                <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                                    <span class="chip bg-color">VUE 常用语法总结</span>
                                 </a>
                             
                         </div>
@@ -741,9 +968,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://hotpotcloud.com/2022/01/02/sty04/';
-        this.page.identifier = '/2022/01/02/sty04/';
-        this.page.title = 'JS高阶04 智库';
+        this.page.url = 'https://hotpotcloud.com/2022/01/16/vue-day03/';
+        this.page.identifier = '/2022/01/16/vue-day03/';
+        this.page.title = 'vue 深入探究03';
     };
     let disqus_shortname = '';
 
@@ -779,13 +1006,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/03/sty05/">
+                <a href="/2022/01/16/01.%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97%E2%80%94day01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="异步同步及框架">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="vue 项目日志01">
                         
-                        <span class="card-title">异步同步及框架</span>
+                        <span class="card-title">vue 项目日志01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -796,7 +1023,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                         </span>
                         <span class="publish-author">
                             
@@ -809,12 +1036,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
                     </a>
                     
-                    <a href="/tags/%E9%AB%98%E9%98%B6/">
-                        <span class="chip bg-color">高阶</span>
+                    <a href="/tags/VUE-%E9%A1%B9%E7%9B%AE%E6%97%A5%E5%BF%97/">
+                        <span class="chip bg-color">VUE 项目日志</span>
                     </a>
                     
                 </div>
@@ -828,13 +1055,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/02/sty01/">
+                <a href="/2022/01/16/vue-day02/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JS 高阶01 闭包">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="vue 深入探究">
                         
-                        <span class="card-title">JS 高阶01 闭包</span>
+                        <span class="card-title">vue 深入探究</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +1072,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                         <span class="publish-author">
                             
@@ -858,12 +1085,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
                     </a>
                     
-                    <a href="/tags/%E9%AB%98%E9%98%B6/">
-                        <span class="chip bg-color">高阶</span>
+                    <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">VUE 常用语法总结</span>
                     </a>
                     
                 </div>

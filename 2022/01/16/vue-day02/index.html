@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS高阶04 智库, Hotpotcloud">
-    <meta name="description" content="课堂知识点智库一、高阶01.Function.prototype.toString的作用返回当前函数代码体的字符串
-02. Function基类的作用new Function([arg1,arg2…],functionBody)可以创建一个">
+    <meta name="keywords" content="vue 深入探究, Hotpotcloud">
+    <meta name="description" content="Vue-day02v-bindv-bind主要作用是：绑定属性
+在vue中，自定义的组件可以通过属性与外界进行通信，那么我们如何为一个组件（或者原生html节点）添加属性呢？
+一句比较绝对又冒失的话：
+template里面的东西，基本都可以">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JS高阶04 智库 | Hotpotcloud</title>
+    <title>vue 深入探究 | Hotpotcloud</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -325,7 +327,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JS高阶04 智库</h1>
+                    <h1 class="description center-align post-title">vue 深入探究</h1>
                 </div>
             </div>
         </div>
@@ -441,12 +443,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/VUE/">
+                                <span class="chip bg-color">VUE</span>
                             </a>
                         
-                            <a href="/tags/%E9%AB%98%E9%98%B6/">
-                                <span class="chip bg-color">高阶</span>
+                            <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                                <span class="chip bg-color">VUE 常用语法总结</span>
                             </a>
                         
                     </div>
@@ -461,28 +463,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-03
+                    2022-01-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    353
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -497,15 +499,317 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="课堂知识点智库"><a href="#课堂知识点智库" class="headerlink" title="课堂知识点智库"></a>课堂知识点智库</h1><h2 id="一、高阶"><a href="#一、高阶" class="headerlink" title="一、高阶"></a>一、高阶</h2><h3 id="01-Function-prototype-toString的作用"><a href="#01-Function-prototype-toString的作用" class="headerlink" title="01.Function.prototype.toString的作用"></a>01.Function.prototype.toString的作用</h3><p>返回当前函数代码体的字符串</p>
-<h3 id="02-Function基类的作用"><a href="#02-Function基类的作用" class="headerlink" title="02. Function基类的作用"></a>02. Function基类的作用</h3><p>new Function([arg1,arg2…],functionBody)可以创建一个function函数，且设置参数</p>
-<h3 id="03-JavaScript和ECMAscript的关系？"><a href="#03-JavaScript和ECMAscript的关系？" class="headerlink" title="03. JavaScript和ECMAscript的关系？"></a>03. JavaScript和ECMAscript的关系？</h3><p>JavaScript是语言<br>ECMAscript是规范</p>
-<h3 id="04-javascript中对象被销毁的标致是什么？"><a href="#04-javascript中对象被销毁的标致是什么？" class="headerlink" title="04.javascript中对象被销毁的标致是什么？"></a>04.javascript中对象被销毁的标致是什么？</h3><p>当对象不再引用的时候，就被销毁了，比如a={name:‘张三’},如果为a赋值为null，则{name：‘张三’}就被销毁了</p>
-<h3 id="05-ES6解构赋值的核心是什么？"><a href="#05-ES6解构赋值的核心是什么？" class="headerlink" title="05.ES6解构赋值的核心是什么？"></a>05.ES6解构赋值的核心是什么？</h3><p>变量所处结构目标数据结构一模一样<br>数组解构小细节：<br>跳过成员解构，使用空白加逗号</p>
-<h3 id="06-扩展运算符特性"><a href="#06-扩展运算符特性" class="headerlink" title="06.扩展运算符特性"></a>06.扩展运算符特性</h3><p>1.可以展开字符串<br>2.可以展开数组<br>3.可以展开对象<br>(1)必须在一个对象内展开另一个对象</p>
-<h3 id="07-Object-assign的作用"><a href="#07-Object-assign的作用" class="headerlink" title="07.Object.assign的作用"></a>07.Object.assign的作用</h3><p>1.语法：Object.assign(target,source1,source2…)<br>2.定义：将所有可枚举属性从一个或多个源对象身上分配给目标对象，且返回目标对象本身！</p>
-<h3 id="08-class类中原型方法的内部this有什么特点？"><a href="#08-class类中原型方法的内部this有什么特点？" class="headerlink" title="08. class类中原型方法的内部this有什么特点？"></a>08. class类中原型方法的内部this有什么特点？</h3><p>3.Class类原型方法在调用的时候必须显式指明this指向，否则内部this为undefined</p>
-<h3 id="09-Object-create的作用是什么？"><a href="#09-Object-create的作用是什么？" class="headerlink" title="09. Object.create的作用是什么？"></a>09. Object.create的作用是什么？</h3><p>1.语法：Object.create(protoObj)<br>2.概念：<br>(1)创建一个对象<br>(2)将参数中的对象设置为创建出来的对象的原型</p>
+                <h2 id="Vue-day02"><a href="#Vue-day02" class="headerlink" title="Vue-day02"></a>Vue-day02</h2><h3 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h3><p>v-bind主要作用是：绑定属性</p>
+<p>在vue中，自定义的组件可以通过属性与外界进行通信，那么我们如何为一个组件（<strong>或者原生html节点</strong>）添加属性呢？</p>
+<p>一句比较绝对又冒失的话：</p>
+<p><strong>template里面的东西，基本都可以使用v-bind来添加属性</strong></p>
+<p><strong>添加常规属性</strong></p>
+<pre class=" language-vue"><code class="language-vue"><!--
+    基本语法：
+        v-bind:属性名=“属性值（或变量）”
+-->
+<p v-bind:selfStr="str">hello world</p>
+</code></pre>
+<p><strong>添加样式类名属性</strong></p>
+<pre class=" language-vue"><code class="language-vue"><!--
+    基本语法：
+        v-bind:class="&#123;类名：flag，类名：flag&#125;"
+    语法解析：
+        通过flag来绝对多个class类名的灵活组合
+-->
+<p v-bind:class="&#123;red:flag,blue:!flag&#125;">hello world</p>
+</code></pre>
+<p><strong>添加style行内样式</strong></p>
+<pre class=" language-vue"><code class="language-vue"><!--
+    基本语法：
+        v-bind:style="&#123; dom样式属性名：样式值，。。。 &#125;"
+    语法解析：
+        dom样式属性名需要使用小驼峰方式，且属性值为字符串的时候需要添加引号
+-->
+<p v-bind:style="&#123; color: 'red', fontWeight: 'bold' &#125;">元宵节快乐</p>
+</code></pre>
+<p style="background:#ff3300;color:#fff;text-align:center;font-weight:bold">v-bind还有一个最佳简写方案:【:属性名】</p>
+### 过滤器filter（新版本已经移除）
+
+<p>过滤器作用和computed差不多，两者之间的区别：</p>
+<p><strong>computed：</strong></p>
+<ul>
+<li>缓存机制</li>
+<li>源数据生成新数据</li>
+<li>源数据发生改变新数据也改变</li>
+</ul>
+<p><strong>filter</strong></p>
+<ul>
+<li>没有缓存机制，过滤几次调用几次</li>
+<li>源数据生成新数据</li>
+<li>源数据发生改变新数据也改变</li>
+</ul>
+<pre class=" language-vue"><code class="language-vue"><template>
+    <ul>
+        <li v-for="(item, index) in stus" :key="index">&#123;&#123; item | newStu &#125;&#125;</li>
+    </ul>
+</template>
+
+<script>
+  data() &#123;
+    return &#123;
+      stus: ["杨洋", "赵任杰", "董家豪", "霍佳俊", "刘佳", "陶天骄"],
+    &#125;;
+  &#125;,
+  filters: &#123;
+    newStu(stu) &#123;
+      return "0928-" + stu;
+    &#125;,
+  &#125;,
+</script>
+
+</code></pre>
+<h3 id="侦听器watch"><a href="#侦听器watch" class="headerlink" title="侦听器watch"></a>侦听器watch</h3><p>在某些项目中，我们需要在数据发生改变后立即执行某些行为（而不是得到新数据），那么针对这样的情况，我们使用watch侦听器比较合适。</p>
+<p><strong>实际项目中，我们有时候会对诸如异步数据进行监听，此时我们需要watch来协助</strong></p>
+<p>基本语法：</p>
+<pre class=" language-vue"><code class="language-vue">...
+watch:&#123;
+    变量名<data中定义的变量>(newValue)&#123;
+        ...    
+    &#125;
+&#125;
+</code></pre>
+<h3 id="props属性"><a href="#props属性" class="headerlink" title="props属性"></a>props属性</h3><p>props属性，规定了当前组件可以接受外界的数据，来参与内部计算。</p>
+<p>props属性有以下特点：</p>
+<ul>
+<li><p>组件标签上属性的体现和html属性的体现一致</p>
+<ul>
+<li>由于业务需求，更多时候，我们需要使用v-bind来为属性传递更多类型的值</li>
+</ul>
+</li>
+<li><p>请切记！！！！！</p>
+<ul>
+<li><strong>当前组件不允许修改外界传递来的属性</strong>，但这绝对吗？不绝对</li>
+</ul>
+</li>
+</ul>
+<h4 id="props属性语法"><a href="#props属性语法" class="headerlink" title="props属性语法"></a>props属性语法</h4><ul>
+<li><pre class=" language-javascript"><code class="language-javascript">props<span class="token punctuation">:</span><span class="token punctuation">[</span>属性名<span class="token number">1</span><span class="token punctuation">,</span>属性名<span class="token number">2</span><span class="token punctuation">,</span>属性名<span class="token number">3</span>。。。<span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li>优点：可以非常简洁的接受多个属性</li>
+<li>缺点：约束性不高，所有属性可以传递任何值</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><pre class=" language-javascript"><code class="language-javascript">props<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    这种方式用得最多
+    属性名<span class="token number">1</span><span class="token punctuation">:</span>类型（Sring）<span class="token punctuation">,</span>
+    属性名<span class="token number">2</span><span class="token punctuation">:</span>类型（Sring）<span class="token punctuation">,</span>
+    属性名<span class="token number">3</span><span class="token punctuation">:</span>类型（Sring）<span class="token punctuation">,</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>优点：可以相对准确的约束属性的类型</li>
+<li>缺点：无法自定义约束，以达到更加精确的类型和结构约束</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><pre class=" language-javascript"><code class="language-javascript">props<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    属性名<span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        type<span class="token punctuation">:</span>类型<span class="token punctuation">,</span> 
+        <span class="token keyword">default</span><span class="token punctuation">:</span>默认值<span class="token punctuation">,</span>
+        required<span class="token punctuation">:</span>boolean<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//必填</span>
+        <span class="token function">validator</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">// 自定义校验</span>
+            <span class="token keyword">return</span> boolean          
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>优点：可以实现更多约束：必填、默认值、自定义校验</li>
+<li>缺点：语法繁琐</li>
+</ul>
+</li>
+</ul>
+<p>代码演示：</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div>
+    <p>&#123;&#123; tit &#125;&#125;</p>
+    <p>&#123;&#123; content.name &#125;&#125;</p>
+  </div>
+</template>
+
+<script>
+export default &#123;
+  // props: ["tit", "content"],    // 使用数组定义props
+  /*
+      props:&#123;    // 使用对象定义props
+          tit:String,
+          content:Object
+      &#125;,
+  */
+  props: &#123; // 更复杂的props写法
+    tit: &#123;
+      type: String,
+      default: "默认tit",
+      required: true,
+      validator(v) &#123;
+        return v !== "李四";
+      &#125;,
+    &#125;,
+    content: Object,
+  &#125;,
+&#125;;
+</script>
+
+<style scoped>
+</style>
+</code></pre>
+<h3 id="vue-router基本语法使用"><a href="#vue-router基本语法使用" class="headerlink" title="vue-router基本语法使用"></a>vue-router基本语法使用</h3><p>vue-router是vue路由的首选插件（也是官方插件）</p>
+<p>vue-router的路由，其实是通过监听浏览器地址栏hash地址或者history（html5提供的新功能）地址来判断并切换要显示的dom内容。</p>
+<p>基本使用方法：</p>
+<ol>
+<li><p>引入——引入Vue和VueRouter</p>
+<ol>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> VueRouter <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>注册</p>
+<ol>
+<li><pre class=" language-js"><code class="language-js">Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//很多基于vue的插件和组件库都是使用vue.use来注册的</span>
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>结构——创建路由数据结构</p>
+<ol>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        path<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        component<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'../../MyDemo'</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">]</span>
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>实例——通过VueRouter生成实例化路由</p>
+<ol>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    routes
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>挂载——将路由实例导出，在main.js中引入并挂载</p>
+<ol>
+<li><pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  router<span class="token punctuation">,</span>
+  render<span class="token punctuation">:</span> h <span class="token operator">=</span><span class="token operator">></span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<p>以上为路由基本使用语法</p>
+<p>但是！若想你的路由正常使用，你还需要一个路由出口组件：<code>&lt;router-view&gt;</code>，所有路有规则匹配到的组件都会在<code>&lt;router-view&gt;</code>，（<strong>这也是实现路由嵌套的核心组件</strong>）</p>
+<h4 id="router-view详解"><a href="#router-view详解" class="headerlink" title="router-view详解"></a>router-view详解</h4><p>router-view是vue-router提供的一个路由入口组件，其主要作用为：根据路由规则来切换渲染对应的组件</p>
+<p>虽然概念简单，但实际项目应用中router-view往往和App.vue牵扯不清。</p>
+<p>首先你需要知道一个概念：<strong>App.vue是整个vue项目中唯一保持生命活性的组件，这就是为什么App.vue被称为入口组件的原因</strong></p>
+<p>那么结合App.vue我们可以得到一个结论，router-view在进行一级页面切换的时候最好就是直接让router-view代替App.vue内部的所有内容</p>
+<p><strong>router-view和vue-router又有什么关系呢？</strong></p>
+<ul>
+<li>vue-router最主要的作用是给vue配置路由逻辑，让vue项目内部可以跳转路由和使用路由相关api</li>
+<li>router-view最主要的功能是渲染视图，当vue-router监听到浏览器规则时，将对应组件交给router-view来呈现渲染</li>
+</ul>
+<h4 id="vue路由跳转"><a href="#vue路由跳转" class="headerlink" title="vue路由跳转"></a>vue路由跳转</h4><p>vue路由跳转有三种方式：</p>
+<ul>
+<li><p>组件跳转</p>
+<ul>
+<li><p>使用<code>&lt;router-link /&gt;</code>组件来实现跳转</p>
+</li>
+<li><pre class=" language-vue"><code class="language-vue"><router-link to="/hello-world">跳转到hello-world（组件跳转）</router-link>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>函数跳转</p>
+<ul>
+<li><p>当你在vue项目中成功配置了一个vue-router路由之后，你的项目全局范围内就会挂载一个$router大对象</p>
+</li>
+<li><p>$router是项目全局路由大对象，可以得到所有跟路由【处理】相关的属性和方法</p>
+</li>
+<li><p>在任何组件内，通过<code>this.$router</code>即可访问到</p>
+</li>
+<li><p>通过<code>this.$router.push(path)</code>就可以进行跳转了</p>
+</li>
+<li><pre class=" language-js"><code class="language-js"><span class="token function">jumpTo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">"/hello-world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>a标签跳转</p>
+<ul>
+<li><p>使用a标签结合锚点路径来进行跳转</p>
+</li>
+<li><pre class=" language-vue"><code class="language-vue"><a href="#/hello-world">跳转到hello-world</a>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="vue路由传参"><a href="#vue路由传参" class="headerlink" title="vue路由传参"></a>vue路由传参</h4><p>路由可以跳转，也可以传参，常用传参手段，往往是借助路由函数跳转方式进行传参。</p>
+<p>在了解传参之前，我们还需要知道一个东西：【当前路由对象—$route】（请注意和$router全局路由对象区分开）.</p>
+<p>当前路由对象$route带有当前路由全部相关信息，通过console打印可以知道，当前路由对象$route身上带有一个<code>params</code>和<code>query</code>两个属性，这两个属性其实就可以帮助我们得到前一个路由传递来的参数了</p>
+<p>路由传参基本语法：</p>
+<p><strong>params传参</strong></p>
+<p style="background:#ff3300;color:#fff;font-weight:bold;text-align:center">使用params传参，路由必须具备name，且只能基于name跳转</p>
+````js
+this.$router.push({
+    name:'hello-world',
+    params:{
+        id:1
+    }
+})
+````
+
+<p style="background:#ff3300;color:#fff;font-weight:bold;text-align:center">params传递的参数不持久，参数不在地址栏体现，刷新页面后，就消失了</p>
+**query传参**
+
+<p style="background:#ff3300;color:#fff;font-weight:bold;text-align:center">query既能基于path跳转，也能基于name跳转</p>
+````js
+this.$router.push({
+    path:'/hello-world',
+    query:{
+        id:1
+    }
+})
+````
+
+<p style="background:#ff3300;color:#fff;font-weight:bold;text-align:center">使用query传参，参数在地址栏上体现，且持久</p>
+实际项目中，我们在大型参数（大对象，大数组）传递时，更多使用的是本地存储
+
+
+
+<h4 id="路由嵌套"><a href="#路由嵌套" class="headerlink" title="路由嵌套"></a>路由嵌套</h4><p>从写法上分析，路由嵌套，最重要的地方就是路由数据结构中的【children】属性</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        path<span class="token punctuation">:</span> <span class="token string">'/hello-world'</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">'hello-world'</span><span class="token punctuation">,</span>
+        component<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/HelloWorld'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        children<span class="token punctuation">:</span> <span class="token punctuation">[</span>        <span class="token comment" spellcheck="true">//当前路由下书写children子路由数据结构</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                path<span class="token punctuation">:</span> <span class="token string">'hello-1'</span><span class="token punctuation">,</span>
+                component<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/Hello1'</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">]</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>从逻辑上分析，既然有二级路由，那就说明【当前路由对应的组件内还会继续进行路由规则匹配和路由组件渲染】，</p>
+<p>基于上面的描述，代表，那个组件内有子路由，那么那个组件内一定要有一个<code>&lt;router-view&gt;&lt;/router-view&gt;</code></p>
 
                 
             </div>
@@ -532,7 +836,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hotpotcloud.com/2022/01/02/sty04/">https://hotpotcloud.com/2022/01/02/sty04/</a>
+                    <a href="https://hotpotcloud.com/2022/01/16/vue-day02/">https://hotpotcloud.com/2022/01/16/vue-day02/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -570,12 +874,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/VUE/">
+                                    <span class="chip bg-color">VUE</span>
                                 </a>
                             
-                                <a href="/tags/%E9%AB%98%E9%98%B6/">
-                                    <span class="chip bg-color">高阶</span>
+                                <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                                    <span class="chip bg-color">VUE 常用语法总结</span>
                                 </a>
                             
                         </div>
@@ -741,9 +1045,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://hotpotcloud.com/2022/01/02/sty04/';
-        this.page.identifier = '/2022/01/02/sty04/';
-        this.page.title = 'JS高阶04 智库';
+        this.page.url = 'https://hotpotcloud.com/2022/01/16/vue-day02/';
+        this.page.identifier = '/2022/01/16/vue-day02/';
+        this.page.title = 'vue 深入探究';
     };
     let disqus_shortname = '';
 
@@ -779,13 +1083,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/03/sty05/">
+                <a href="/2022/01/16/vue-day03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="异步同步及框架">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="vue 深入探究03">
                         
-                        <span class="card-title">异步同步及框架</span>
+                        <span class="card-title">vue 深入探究03</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -796,7 +1100,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                         </span>
                         <span class="publish-author">
                             
@@ -809,12 +1113,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
                     </a>
                     
-                    <a href="/tags/%E9%AB%98%E9%98%B6/">
-                        <span class="chip bg-color">高阶</span>
+                    <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">VUE 常用语法总结</span>
                     </a>
                     
                 </div>
@@ -828,13 +1132,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/02/sty01/">
+                <a href="/2022/01/16/vue-day01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JS 高阶01 闭包">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="vue 入门安排01">
                         
-                        <span class="card-title">JS 高阶01 闭包</span>
+                        <span class="card-title">vue 入门安排01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -845,7 +1149,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                         <span class="publish-author">
                             
@@ -858,12 +1162,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
                     </a>
                     
-                    <a href="/tags/%E9%AB%98%E9%98%B6/">
-                        <span class="chip bg-color">高阶</span>
+                    <a href="/tags/VUE-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/">
+                        <span class="chip bg-color">VUE 常用语法总结</span>
                     </a>
                     
                 </div>
